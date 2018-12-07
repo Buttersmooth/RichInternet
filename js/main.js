@@ -3,8 +3,8 @@ $(document).ready(function() {
    
     var value= data.split('\n');
     var labels = values[0].split(',');
-    var colors = values[1].split(',').map(colcolour());
-    var vals = values[2].split(',').map(parseInt);
+    var colors = values[1].split(',').map(colcolour);
+    var vals = values[2].split(',').map(function(item) { return parseInt(item); });
  
       var ctx = document.getElementById('myChart').getContext('2d');
         var chart = new Chart(ctx, {
