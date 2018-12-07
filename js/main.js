@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $.get('data.csv', function(data){
    
-    var value= data.split('\n');
+    var value = data.split('\n');
     var labels = value[0].split(',');
     var colors = value[1].split(',').map(colcolour);
     var vals = value[2].split(',').map(function(item) { return parseInt(item); });
