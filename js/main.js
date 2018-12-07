@@ -2,9 +2,9 @@ $(document).ready(function() {
     $.get('data.csv', function(data){
    
     var value= data.split('\n');
-    var labels = values[0].split(',');
-    var colors = values[1].split(',').map(colcolour);
-    var vals = values[2].split(',').map(function(item) { return parseInt(item); });
+    var labels = value[0].split(',');
+    var colors = value[1].split(',').map(colcolour);
+    var vals = value[2].split(',').map(function(item) { return parseInt(item); });
  
       var ctx = document.getElementById('myChart').getContext('2d');
         var chart = new Chart(ctx, {
