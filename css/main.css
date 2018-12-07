@@ -1,3 +1,13 @@
+@font-face {
+	font-family: myFont;
+	src: url(../Bakersfield Light.ttf);
+}
+
+#AvatarImage:hover {
+	background: url(https://3b8vke2q8u7d1hbtzy29u7kt-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/AlexG1-1-1484x1484.jpg);
+}
+
+
 .no-padding {
     padding-left: 0;
     padding-right: 0;
@@ -19,6 +29,7 @@ hr.style-four {
 	color: white;
 	margin-bottom: 25px;
 }
+
 
 .footer-text {
 	color: wheat;
